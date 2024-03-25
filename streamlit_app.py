@@ -7,7 +7,10 @@ if "indices" in st.session_state:
   indices=st.session_state["indices"]
 else:
   indices = np.random.choice(l, size=4, replace=False)
+
+st.write(indices)
 j = np.random.choice(indices)
+st.write(j)
 word_fr=voc['Définition'].values[j]
 st.write('Traduis: '+word_fr)
 
